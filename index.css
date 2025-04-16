@@ -47,6 +47,8 @@ color: #fff;
 
 }
 .formcontainer {
+    padding-top: 2%;
+    padding-bottom: 1%;
     display: flex;
     margin:0;
     width: 100%;
@@ -68,7 +70,7 @@ input {
 border: 0;
 background: rgba(0, 0, 0, 0);
 appearance: none;
-width: 30%;
+width: 40%;
 position: relative;
 border-radius: 3px;
 padding: 9px 12px;
