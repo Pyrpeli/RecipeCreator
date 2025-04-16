@@ -29,7 +29,66 @@ span {
     font-size: 1.9em;
     margin-left: 10px;
 }
-/**
-header box shadow code:
 
-*/
+button {
+display: flex;
+white-space: nowrap;
+outline: none;
+cursor: pointer;
+font-size: 16px;
+line-height: 18px;
+font-weight: 400;
+border-radius: 8px;
+padding: 14px 24px;
+border: none;
+transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+background: linear-gradient(to right, rgb(30, 167, 230) 0%, rgb(51, 39, 231) 50%, rgb(60, 4, 215) 100%);
+color: #fff;
+
+}
+.formcontainer {
+    display: flex;
+    margin:0;
+    width: 100%;
+    justify-content: center;
+}
+
+.addingridientform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    width: 80%;
+    padding: 1% 2%;
+}
+
+input {
+    line-height: 2;
+    box-shadow: inset #abacaf 0 0 0 2px;
+border: 0;
+background: rgba(0, 0, 0, 0);
+appearance: none;
+width: 30%;
+position: relative;
+border-radius: 3px;
+padding: 9px 12px;
+line-height: 1.4;
+color: rgb(0, 0, 0);
+font-size: 16px;
+font-weight: 400;
+height: 40px;
+transition: all .2s ease;
+}
+input:hover{
+    box-shadow: 0 0 0 0 #fff inset, #1da8e9 0 0 0 2px;
+}
+input:focus{
+    background: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 0 #fff inset, #1d75e9 0 0 0 3px;
+}
+
+
+
+
+
