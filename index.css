@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+}
+
+.header {
+    display: flex;
+    background-color:rgb(152, 186, 230);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.headerbar {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    margin: 1%;
+    width: 55px;
+}
+
+span {
+    font-size: 1.9em;
+    margin-left: 10px;
+}
+/**
+header box shadow code:
+
+*/
