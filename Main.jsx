@@ -1,8 +1,11 @@
+import React from "react"
+
 const Main = () => {
 
-    const ingredientsList = ["Chicken, Oregano, Tomatoes, Cheese"]
+    const [ingredients, addIngredient] = React.useState([])
 
-    const ingredientListItems = ingredientsList.map(ingredient => (
+
+    const ingredientListItems = ingredients.map(ingredient => (
         <li key={ingredient}>{ingredient}</li>
 
     ))
@@ -11,6 +14,7 @@ const Main = () => {
         event.preventDefault()
         const formData = new FormData(event.currentTarget)
         const newIngredient = formData.get("ingredient")
+        addIngredient(prevIngredients => [...prevIngredients, newIngredient])
         ingredientsList.push(newIngredient)
         console.log(ingredientsList)
     }
